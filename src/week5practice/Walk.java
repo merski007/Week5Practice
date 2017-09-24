@@ -7,36 +7,11 @@ package week5practice;
 public class Walk implements MoveAction {
 
     private String direction;
-    private String speed;
 
     @Override
-    public void moveCharacter(String direction, String speed) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void moveCharacter(String direction) {
+        //not suppose to do output here, but this is practice  
+        System.out.println("The chacter moved 1 space in the " + direction + " direction.");
     }
 
-    @Override
-    public void setDirection(String direction) {
-        if (direction == null || direction.isEmpty()) {
-            throw new IllegalArgumentException("cannot be left blank");
-        }
-        this.direction = direction;
-    }
-
-    @Override
-    public String getDirection() {
-        return direction;
-    }
-
-    @Override
-    public void setSpeed(String speed) {
-        if (direction == null || direction.isEmpty()) {
-            throw new IllegalArgumentException("cannot be left blank");
-        }
-        this.speed = speed;
-    }
-
-    @Override
-    public String getSpeed() {
-        return speed;
-    }
 }

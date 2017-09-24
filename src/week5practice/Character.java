@@ -7,11 +7,14 @@ package week5practice;
 public class Character {
 
     private MoveAction move;
-    private WeaponAction attack;
+    //private WeaponAction attack;
 
-    public Character(MoveAction move, WeaponAction attack) {
+    public Character(MoveAction move) {
         this.move = move;
-        this.attack = attack;
+    }
+    
+    public void move(String direction){
+        move.moveCharacter(direction);
     }
 
 }
